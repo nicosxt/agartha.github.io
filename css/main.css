@@ -1,0 +1,105 @@
+
+/* @keyframes example {
+0%   {background-color: rgb(255, 124, 124);}
+100% {background-color: green;}
+} */
+
+body {
+    padding: 0px;
+    margin: 0px;
+    width: 100vh;
+    height: 100vh;
+    color: rgb(255, 255, 255);
+    /* text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5); */
+    
+    background-attachment: fixed;
+    /*background-image: linear-gradient(135deg, rgb(79, 77, 223) 0%,rgb(245, 173, 255) 100%);*/
+    /* animation-direction: alternate;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; */
+} 
+
+
+#landing-page{
+    /* margin-left: auto!important;
+    margin-right: auto!important; */
+    /* text-align: center;
+    margin: 0 auto;
+    background-color: #ccc;
+    width: 100%; */
+}
+
+
+/*Agartha*/
+
+.a-title .a-bulletpoints{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.a-title{
+    font-weight: bold;
+}
+
+.a-subtitle{
+    font-family: 'Amiri', serif;
+}
+
+.a-frontpage{
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+
+/* canvas { width: 100px; height: 200px; display: block; background: aqua} */
+
+
+/*
+ * Globals
+ */
+
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+}
+
+
+/*
+ * Base structure
+ */
+
+.cover-container {
+  /* max-width: 42em; */
+}
+
+
+/*
+ * Header
+ */
+
+/* .nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+} */
+
+/* .nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+} */
