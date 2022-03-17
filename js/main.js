@@ -5,13 +5,13 @@
 
 // var color1 = 'hsv(100,100,100)';
 
-const body = document.getElementById("a-backgroundbody");
+const body = document.getElementById("myCanvas");
 
 let h1 = 0.8;
 let h2 = 0.62;
 let color1 = HSVtoRGB(h1, 0.5, 0.8);
 let color2 = HSVtoRGB(h2, 0.5, 0.8);
-let increment = 0.01;
+let increment = 0.0033;
 
 function setGradient(){
     h1 += increment;
@@ -23,13 +23,30 @@ function setGradient(){
 
     let bgColor = "linear-gradient(135deg, " + color1 + "0%,"+ color2 +" 100%)";
     body.style.background = bgColor;
+
+    //set responsiveness for screen
+    body.width = window.innerWidth;
+    body.height = window.innerHeight;
+
 }
 
-
 //setGradient();
-
 setInterval(setGradient, 100);
 
+
+//CREATE FIXED BACKGROUND
+var elTop = body.getBoundingClientRect().top - document.body.getBoundingClientRect().top;
+window.addEventListener('scroll', function(){
+    if (document.documentElement.scrollTop >= elTop){
+        body.style.position = 'fixed';
+        body.style.top = '0px';
+    }
+    else
+    {
+        body.style.position = 'static';
+        body.style.top = 'auto';
+    }
+});
 
 function hexToRgb(hex) {
     var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
@@ -64,3 +81,4 @@ function HSVtoRGB(h, s, v) {
     return rgb;
 
 };
+
