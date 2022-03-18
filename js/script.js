@@ -325,16 +325,16 @@ function startAnimating() {
 createBoids();
 startAnimating(30);
 
-function handleInteraction(evt) {
-  evt.preventDefault()
-  console.log('interacted')
+// function handleInteraction(evt) {
+//   evt.preventDefault()
+//   console.log('interacted')
 
-  createBoids();
+//   createBoids();
   
-}
-el = document.getElementById("a-page1");
-el.addEventListener('touchstart', handleInteraction)
-el.addEventListener('click', handleInteraction)
+// }
+// el = document.getElementById("a-page1");
+// el.addEventListener('touchstart', handleInteraction)
+// el.addEventListener('click', handleInteraction)
 
 /*---- end Loop and Initializing ----*/
 
