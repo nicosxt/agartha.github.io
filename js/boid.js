@@ -78,7 +78,7 @@ class Boid {
       } else {
         var racismMultiplier = 0;
       }
-      var desiredSeparation = this.radius + boids[j].radius + ( 25 * this.introversion ) + ( 50 * 10 );
+      var desiredSeparation = this.radius + boids[j].radius + ( 25 * this.introversion ) + ( 50 * racismMultiplier );
       var sep = this.position.clone().distance(boids[j].position);
       if ( (sep > 0) && (sep < desiredSeparation) ) {
         var thisposition = this.position.clone();

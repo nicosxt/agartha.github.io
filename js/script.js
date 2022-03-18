@@ -157,7 +157,7 @@ Victor.prototype.limitMagnitude = function (max) {
 
 // Checkbox Options
 var walls = true;
-var mouseSeek = true;
+var mouseSeek = false;
 var collisions = false;
 
 // Set number of boids based on browser and screen size
@@ -433,7 +433,7 @@ addEventListener('mousemove', function(event){
 
 // Mouse Seek
 // var mouseSeekInput = document.getElementById('mouse-seek');
-// mouseSeekInput.checked = true;
+// mouseSeekInput.checked = false;
 // mouseSeekInput.onclick = function() {
 //   if ( !this.checked ) {
 //     this.checked = false;
@@ -475,13 +475,11 @@ addEventListener('mousemove', function(event){
 //   document.getElementById('mobile-boids-controls').style.display = 'none';
 //   introversionControlContainer.classList.toggle('show');
 // }
-updateIntroversion(0.7);
-function updateIntroversion(value) {
-  for (var i=0; i<boids.length; i++) {
-    boids[i].introversion = value * boids[i].introversionCoefficient;
-  }
-  console.log(value);
-}
+// function updateIntroversion(value) {
+//   for (var i=0; i<boids.length; i++) {
+//     boids[i].introversion = value * boids[i].introversionCoefficient;
+//   }
+// }
 
 // Speed
 // var speedControlContainer = document.getElementById('speed-control-container');
@@ -495,7 +493,7 @@ function updateIntroversion(value) {
 //   document.getElementById('mobile-boids-controls').style.display = 'none';
 //   speedControlContainer.classList.toggle('show');
 // }
-updateQuickness(0.7);
+updateQuickness(0.3);
 function updateQuickness(value) {
   for (var i=0; i<boids.length; i++) {
     boids[i].quickness = value * boids[i].quicknessCoefficient;
@@ -515,14 +513,12 @@ function updateQuickness(value) {
 //   document.getElementById('mobile-boids-controls').style.display = 'none';
 //   racismControlContainer.classList.toggle('show');
 // }
-updateRacism(0.5);
+updateRacism(100);
 function updateRacism(value) {
   for (var i=0; i<boids.length; i++) {
     boids[i].racism = value * boids[i].racismCoefficient;
   }
 }
-
-console.log("walls " + walls);
 
 // Diversity
 // var diversityControlContainer = document.getElementById('diversity-control-container');
