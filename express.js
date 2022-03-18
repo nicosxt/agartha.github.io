@@ -17,5 +17,6 @@ app.listen(process.env.port || 3000);
 app.use("/img", express.static('./img/'));
 app.use("/js", express.static('./js/'));
 app.use("/css", express.static('./css/'));
+app.use("/video", express.static('./video/'));
 
 console.log('Running at Port 3000');

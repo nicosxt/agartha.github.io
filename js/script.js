@@ -37,21 +37,21 @@ canvas.height = size.height;
 var center = new Victor( size.width / 2 ,size.height / 2 );
 
 //CREATE FIXED BACKGROUND
-var body = canvas;
-var elTop = body.getBoundingClientRect().top - document.body.getBoundingClientRect().top;
-window.addEventListener('scroll', function(){
-    if (document.documentElement.scrollTop >= elTop){
-        body.style.position = 'fixed';
-        body.style.top = '0px';
-    }
-    else
-    {
-        body.style.position = 'static';
-        body.style.top = 'auto';
-    }
-});
+// var body = canvas;
+// var elTop = body.getBoundingClientRect().top - document.body.getBoundingClientRect().top;
+// window.addEventListener('scroll', function(){
+//     if (document.documentElement.scrollTop >= elTop){
+//         body.style.position = 'fixed';
+//         body.style.top = '0px';
+//     }
+//     else
+//     {
+//         body.style.position = 'static';
+//         body.style.top = 'auto';
+//     }
+// });
 
-body.style.background = 'rgb(34,34,34)';
+canvas.style.background = 'rgb(34,34,34)';
 
 
 // Initialize Mouse
@@ -336,19 +336,19 @@ addEventListener('mousemove', function(event){
  * Update boundary sizes on window resize
  *
  */
-addEventListener('resize', function(){
-  size.width = innerWidth;
-  size.height = innerHeight;
-  canvas.width = innerWidth;
-  canvas.height = innerHeight;
-  center.x = size.width/ 2;
-  center.y = size.height / 2;
-  if ( innerWidth >= 1000 && ! mobile ) {
-    document.getElementById('mobile-boids-controls').style.display = 'none';
-  } else {
-    document.getElementById('mobile-boids-controls').style.display = 'block';
-  }
-});
+// addEventListener('resize', function(){
+//   size.width = innerWidth;
+//   size.height = innerHeight;
+//   canvas.width = innerWidth;
+//   canvas.height = innerHeight;
+//   center.x = size.width/ 2;
+//   center.y = size.height / 2;
+//   if ( innerWidth >= 1000 && ! mobile ) {
+//     document.getElementById('mobile-boids-controls').style.display = 'none';
+//   } else {
+//     document.getElementById('mobile-boids-controls').style.display = 'block';
+//   }
+// });
 
 /*---- end Event Listeners ----*/
 
@@ -513,11 +513,12 @@ function updateQuickness(value) {
 //   document.getElementById('mobile-boids-controls').style.display = 'none';
 //   racismControlContainer.classList.toggle('show');
 // }
-// function updateRacism(value) {
-//   for (var i=0; i<boids.length; i++) {
-//     boids[i].racism = value * boids[i].racismCoefficient;
-//   }
-// }
+updateRacism(100);
+function updateRacism(value) {
+  for (var i=0; i<boids.length; i++) {
+    boids[i].racism = value * boids[i].racismCoefficient;
+  }
+}
 
 // Diversity
 // var diversityControlContainer = document.getElementById('diversity-control-container');

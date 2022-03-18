@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>🔮Agartha🔮</title>
+    <title>👁Agartha👁</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
     <!-- Bootstrap core CSS -->
@@ -13,46 +13,52 @@
     <link rel="shortcut icon" href="../img/favico.png"/>
   </head>
   
-<body class="d-flex h-100 w-100">
-  <canvas id="myCanvas">
-    Your browser does not support the canvas element.
-  </canvas>
+<body class="h-100 w-100">
+  
+<video autoplay muted loop id="myVideo">
+  <source src="../video/bg.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
 
+<div id="cover-container" class="d-flex w-100 p-3 mx-auto flex-column mx-5 a-maintext">
+  <div id="a-page0" class="row d-flex justify-content-center mx-auto">
 
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column mx-5">
-  <header class="mb-auto mt-2">
-    <div>
-      <p class="float-md-start mb-0 mx-3">Hi you! It seems that the mysterious mycelium network of our wonderful universe has brought you here.</p>
-    </div>
-  </header>
+      <div class="text-center my-auto">
+      <div class="a-title my-5 mx-2 sansserif-font">Find Your Tribe</div>
+      <h2 class="py-3 px-0 a-subtitle lh-5 serif-font">Actualize Your Ideal Community</h2>
+      </div>
 
-
-  <main class="a-frontpage m-auto">
-    <div class="text-center">
-    <div class="a-title fs-1 my-5 mx-2">👁  Find Your People  👁</div>
-    <h2 class="py-3 px-0 a-subtitle fs-3 lh-5">Agartha is a space to empower people to actualize their ideal communities.</h2>
-    </div>
-
-    <div id="a-bulletpoints" class="lead lh-3 m-5"><ul>
-      <li class="my-2">We aim to connect people with different expertise, skillsets and resources and help them meet others who are interested in the same kind of communal spaces that are an alternative to default societies.</li>
-      <li class="my-2">This is a space for everyone interested in building alternative societies, solar punks, van lifers, digital nomads, builders, architects, engineers, artists, creators, healers and more.</li>
-      <li class="my-2">Everyone here brings something new to the table, we are excited to hear your story 💞 and help you find your people.</li>
-    </ul>
   </div>
 
-    <p class="lead text-center m-5">
-      <a href="https://forms.gle/SaSS8FkfYoh1HcAq7" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Join Us</a>
-    </p>
-  </main>
 
-  <footer class="mt-auto text-end mx-3 pb-2">
-    <p class="mb-3">For Mother Nature and Our Fractal Universe.</p>
-  </footer>
+  <div id="a-page1" class="row d-flex mx-auto text-center">
+    <div id="" class="mt-auto mb-5 serif-font">
+      <ul>
+        <li class="my-4">We connect like-minded people who aim to live outside of default society.</li>
+        <li class="my-4">Everyone here brings something new to the table.</li>
+        <li class="my-4">We collect and share information about what works and what doesn't in alternative societies.</li>
+        <li class="my-4">We provide community founders a diverse pool of interesting people.</li>
+        <li class="my-4">We look forward to hear your story 💞 and to help you find your tribe.</li>
+      </ul>
+    </div>
+
+      <p class="mb-auto mt-5 sansserif-font">
+        <a href="https://forms.gle/ee23VhQbThZ3DTKn7" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Join Agartha</a>
+      </p>
+  </div>
 </div>
+
+<canvas id="myCanvas">
+  Your browser does not support the canvas element.
+</canvas>
+
+
 
     
 </body>
 <!-- <script src="../js/main.js"></script> -->
+
+
 <script src="js/victor.min.js"></script>
 <script src="js/boid.js"></script>
 <script src="js/script.js"></script>
