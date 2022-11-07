@@ -1,0 +1,112 @@
+body {
+    padding: 0;
+    margin: 0;
+    color: #0000ff;
+    text-align: center;
+    font-size: 2rem;
+}
+a:visited{
+    color:rgb(72, 37, 59);
+}
+
+button{
+    border-style: none;
+    font-family: "Courier New", monospace;
+    color:blue;
+
+    font-size: 2rem;
+}
+  
+button:hover{
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: "Courier New", monospace;
+    font-weight: 500;
+  }
+
+  .titleElement{
+    max-width: 90vw;
+  }
+
+.titleElementButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.titleElementDescription{
+    font-size: 1.5rem;
+    line-height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.showItem{
+  display: none;
+  align-items: bottom;
+  position:absolute;
+  bottom: 1.5rem;
+}
+
+.buttonAgartha{
+  background-color: #FFDDED;
+}
+
+.buttonAgartha:hover{
+  background-color: #6BFFB2;
+}
+
+.buttonTrait{
+    margin: 0.5vw;
+    background-color: #FFDDED;
+    overflow-wrap: normal;
+}
+
+.buttonTrait:hover{
+  background-color: #6BFFB2;
+}
+
+.buttonLinks{
+  margin: 0.5vw;
+  background-color: #f9ffbc;
+  overflow-wrap: normal;
+}
+.buttonLinks:hover{
+  background-color: #6BFFB2;
+}
+
+.emailLink{
+  margin: 0.5vw;
+  background-color: #bcffe4;
+  overflow-wrap: normal;
+}
+.emailLink:hover{
+  background-color: #6BFFB2;
+}
+
+.pfp{
+  width: auto;
+  height: 18vh;
+}
+
+  /* .showOnHover{
+    display: none;
+  }
+
+  .buttonDAO:hover + .showOnHover{
+    display: block;
+    color: red;
+  } */

@@ -1,69 +1,80 @@
 <!doctype html>
-<html lang="en" class="h-100">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>👁Agartha👁</title>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+        <link rel="icon" type="image/x-icon" href="/img/agartha-favicon.png">
+        <title>Syntonikka</title>
+      </head>
+  <body>
+    <div>
+      <div class="titleContainer">
+        <div class="titleElement">Hi! I am Syntonikka.</div>
+        <p class="titleElement">Currently, I'm building <button class="buttonAgartha"><a href="https://agartha.one" target="_blank" rel="noopener noreferrer">Agartha</a></button>, a DAO to expand meaningful intentional communities.</p>
+        <img src="img/nico.jpg" alt="nico" class="pfp">
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
-    <!-- Bootstrap core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/main.css" rel="stylesheet">
-    <!-- <link href="../css/style.css" rel="stylesheet"> -->
-    <link rel="shortcut icon" href="../img/favico.png"/>
-  </head>
-  
-<body class="h-100 w-100">
-  
-<video autoplay muted loop playsinline id="myVideo" poster="img/bg.png">
-  <source src="../video/bg.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
+        <div class="titleElementButtons">
+          <button class="buttonTrait" onclick="toggleItem('showGames');">Game Development</button>
+          <button class="buttonTrait" onclick="toggleItem('showDesign');">Visual Design</button>
+          <button class="buttonTrait" onclick="toggleItem('showAR');">Augmented Reality</button>
+          <a class="buttonTrait" href="https://www.instagram.com/syntonikka/" target="_blank" rel="noopener noreferrer">3D Modeling</a>
+          <button class="buttonTrait"onclick="toggleItem('showIllustrations');">Illustrations</button>
+          <a class="buttonTrait" href="https://soundcloud.com/syntonikka" target="_blank" rel="noopener noreferrer">Music</a>
+          <a class="buttonTrait" href="https://mirror.xyz/syntonikka.eth" target="_blank" rel="noopener noreferrer">Blog</a>
+          <button class="buttonTrait" onclick="toggleItem('showDAOConsulting');">DAO Work</button>
+        </div>
 
-<div id="cover-container" class="d-flex w-100 p-3 mx-auto flex-column a-maintext">
-  <div id="a-page0" class="row d-flex justify-content-center mx-auto my-auto">
+        <div class="titleElement">
+          <div class="emailLink">say Hi: syntonikka@gmail.com</div>
+        </div>
 
-      <div class="text-center my-auto">
-      <div class="a-title mx-2 sansserif-font display-1">The Future Is</div>
-      <div class="a-title mx-2 sansserif-font display-1">Solarpunk</diiv>
-      <div class="d-flex justify-content-center a-subtitle mx-auto  my-5 h-100">
-        <a href="https://www.notion.so/Agartha-4e4dcfd1584f420f87daf46ca2aaf25c"><button type="button" class="mx-3 btn btn-light btn-lg" aria-pressed="false">Wiki</button></a>
-        <a href="https://discord.gg/b9v5YM9hwJ"><button type="button" class="mx-3 btn btn-dark btn-lg" aria-pressed="true">!Join</button></a>
+
+        <div class="titleElement showItem" id="showIllustrations">
+          <a class="buttonLinks" href="http://animateception.com/art.html" target="_blank" rel="noopener noreferrer">Early Works</a>
+          <a class="buttonLinks"  href="https://www.behance.net/gallery/61281835/Meanwhile-in-parallel-universe" target="_blank" rel="noopener noreferrer">Parallel Universe</a>
+          <a class="buttonLinks"  href="http://animatedreality.com/%e3%80%8cillustration%e3%80%8dpyramid-in-japan/" target="_blank" rel="noopener noreferrer">Pyramid in Japan</a>
+        </div>
+
+        <div class="titleElement showItem" id="showGames">
+          <a class="buttonLinks" href="https://www.pinx.studio/chefumami" target="_blank" rel="noopener noreferrer">Chef Umami</a>
+          <a class="buttonLinks"  href="http://scratchmyitchyback.com/" target="_blank" rel="noopener noreferrer">Scratch My Itchy Back</a>
+          <a class="buttonLinks"  href="https://twitter.com/syntonikka/status/1472737787220660224?s=20&t=KsyZHQ_DrkT_DEcVYz72MQ" target="_blank" rel="noopener noreferrer">Rhythm Animals</a>
+          <a class="buttonLinks"  href="http://animatedreality.com/tag/games/" target="_blank" rel="noopener noreferrer">All Games</a>
+        </div>
+
+        <div class="titleElement showItem" id="showDesign">
+          <a class="buttonLinks" href="https://www.figma.com/file/h7jgg6m91s4karLHex1N9K/DAO-Crossing?node-id=0%3A1" target="_blank" rel="noopener noreferrer">DAO Crossing</a>
+          <a class="buttonLinks"  href="https://www.notion.so/Pitch-Deck-LEGACY-4b34647ef0754adc8b076ae7dd4c21d5" target="_blank" rel="noopener noreferrer">Agartha Pitch</a>
+          <a class="buttonLinks"  href="https://agartha.one/" target="_blank" rel="noopener noreferrer">Agartha Web</a>
+          <a class="buttonLinks" href="https://www.youtube.com/watch?v=jWgii34kzYo" target="_blank" rel="noopener noreferrer">2016 Election</a>
+        </div>
+
+        <div class="titleElement showItem" id="showDAOConsulting">
+          <div class="titleElementDescription">
+          I worked @<a class="buttonLinks" href="https://citydao.io/" target="_blank" rel="noopener noreferrer">CityDAO</a> as a designer & community curator. I'm also part of <a class="buttonLinks" href="https://creatorcabins.com/" target="_blank" rel="noopener noreferrer">CabinDAO</a> <a class="buttonLinks" href="https://traditionaldreamfactory.com/" target="_blank" rel="noopener noreferrer">TDF</a> & <a class="buttonLinks" href="https://www.fwb.help/" target="_blank" rel="noopener noreferrer">FWB</a>
+          </div>
+        </div>
+
+        <div class="titleElement showItem" id="showAR">
+          <!-- <div class="titleElementDescription">
+          I worked at Snapchat as an AR creator & engineer during 2020-2022. 
+          </div> -->
+          <a class="buttonLinks" href="https://lensstudio.snapchat.com/creator/ZUsWoApM5hss6-LoHGrPwg" target="_blank" rel="noopener noreferrer">SnapAR</a>
+
+          <a class="buttonLinks" href="https://docs.snap.com/lens-studio/references/templates/object/3d-hand-interactions/?_ga=2.10252336.46555538.1667818581-1441314697.1666555781" target="_blank" rel="noopener noreferrer">Hand Tracking</a>
+
+          <a class="buttonLinks" href="https://support.lensstudio.snapchat.com/hc/en-us/articles/360052632811-AR-Scavenger-Hunt" target="_blank" rel="noopener noreferrer">Scavenger Hunt Game</a>
+
+          <a class="buttonLinks" href="https://docs.snap.com/lens-studio/references/templates/interactive/scan/#guide" target="_blank" rel="noopener noreferrer">AR Scan</a>
+
+          <a class="buttonLinks" href="https://docs.snap.com/lens-studio/references/templates/object/body-mesh#guide" target="_blank" rel="noopener noreferrer">Body Tracking</a>
+
+          <!-- <a class="buttonLinks" href="https://docs.snap.com/lens-studio/references/templates/world/tween#guide" target="_blank" rel="noopener noreferrer">Tweening</a> -->
+        </div>
+
       </div>
 
-  </div>
-</div>
-
-<!-- 
-  <div id="a-page1" class="row d-flex mx-auto text-center">
-    <div id="" class="serif-font mt-auto mb-3 fs-5">
-      <ul>
-        <li class="my-4">We connect like-minded people who aim to live outside of default society.</li>
-        <li class="my-4">Everyone here brings something new to the table.</li>
-        <li class="my-4">We collect and share information about what works and what doesn't in alternative societies.</li>
-        <li class="my-4">We provide community founders a diverse pool of interesting people.</li>
-        <li class="my-4">We look forward to hear your story 💞 and to help you find your tribe.</li>
-      </ul>
     </div>
+  </body>
 
-      <p class="sansserif-font mt-3 mb-auto">
-        <a href="https://forms.gle/ee23VhQbThZ3DTKn7" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Join Agartha</a>
-      </p>
-  </div>
-</div>
-
-<canvas id="myCanvas">
-  Your browser does not support the canvas element.
-</canvas> -->
-
-
-
-    
-</body>
-<!-- <script src="../js/main.js"></script> -->
-
-
-<!-- <script src="js/victor.min.js"></script>
-<script src="js/boid.js"></script>
-<script src="js/script.js"></script> -->
+  <script src="functions.js"></script>
 </html>
