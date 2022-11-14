@@ -46,7 +46,7 @@ button:hover{
 
 .titleElementDescription{
     font-size: 1.5rem;
-    line-height: 0;
+    line-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
