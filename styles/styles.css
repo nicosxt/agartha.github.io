@@ -1,25 +1,35 @@
 body {
     padding: 0;
     margin: 0;
-    color: #0000ff;
+    color: #242424;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-family: "Chillax";
+    font-weight: 400;
 }
+
+@font-face {
+  font-family: "Chillax";
+  src: url("./fonts/Chillax-Variable.ttf");
+}
+
 a:visited{
-    color:rgb(72, 37, 59);
+  color:rgb(82, 82, 82);
 }
 
-button{
+a{
+  color: #ff00d4;
+}
+
+/* button{
     border-style: none;
-    font-family: "Courier New", monospace;
-    color:blue;
-
+    background: none;
     font-size: 2rem;
-}
+
+} */
   
 button:hover{
-    cursor: pointer;
-    font-weight: 700;
+  cursor: pointer;
 }
 
 .titleContainer {
@@ -28,8 +38,7 @@ button:hover{
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    font-family: "Courier New", monospace;
-    font-weight: 500;
+    /* font-family: "Courier New", monospace; */
   }
 
   .titleElement{
@@ -61,45 +70,60 @@ button:hover{
   bottom: 1.5rem;
 }
 
-.buttonAgartha{
+/* .buttonAgartha{
   background-color: #FFDDED;
-}
+} */
 
-.buttonAgartha:hover{
+/* .buttonAgartha:hover{
   background-color: #6BFFB2;
-}
+} */
 
 .buttonTrait{
     margin: 0.5vw;
-    background-color: #FFDDED;
+    /* background-color: #FFDDED; */
     overflow-wrap: normal;
-}
-
-.buttonTrait:hover{
-  background-color: #6BFFB2;
+    font-size: 1.5rem;
+    /* font-weight: 300; */
+    cursor: pointer;
 }
 
 .buttonLinks{
   margin: 0.5vw;
-  background-color: #f9ffbc;
+  /* background-color: #FFDDED; */
   overflow-wrap: normal;
-}
-.buttonLinks:hover{
-  background-color: #6BFFB2;
+  font-size: 1.5rem;
+  /* font-weight: 400; */
+  cursor: pointer;
 }
 
-.emailLink{
+/* .buttonTrait:hover{
+  background-color: #6BFFB2;
+} */
+
+/* .buttonLinks{
+  margin: 0.5vw;
+  background-color: #f9ffbc;
+  overflow-wrap: normal;
+} */
+
+/* .buttonLinks:hover{
+  background-color: #6BFFB2;
+} */
+
+/* .hoverColor:hover{
+  background-color: #6BFFB2;
+} */
+
+/* .emailLink{
   margin: 0.5vw;
   background-color: #bcffe4;
   overflow-wrap: normal;
-}
-.emailLink:hover{
-  background-color: #6BFFB2;
-}
+} */
 
 .pfp{
   width: auto;
   height: 18vh;
+  margin-bottom: 3rem;
 }
 
   /* .showOnHover{

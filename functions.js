@@ -1,5 +1,3 @@
-console.log("this js is connectedd");
-
 var allItems = document.getElementsByClassName("showItem");
 
 function toggleItem(id){
@@ -16,3 +14,19 @@ function toggleItem(id){
         }
     }
 }
+
+//randomize background color on selection
+const colors = ['#ff83a0', '#ffbf00', '#8eff4d', '#6effd8', '#6b98ff', '#e49eff', '#ffe96c', '#5affec'];
+const hoverColorClasses = document.querySelectorAll('.hoverColor');
+
+hoverColorClasses.forEach(function(hoverColor) {
+    hoverColor.addEventListener('mouseover', function() {
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        this.style.backgroundColor = randomColor;
+    });
+    
+    hoverColor.addEventListener('mouseout', function() {
+        this.style.backgroundColor = 'transparent';
+    });
+});
+

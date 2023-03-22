@@ -2,78 +2,85 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
-        <link rel="icon" type="image/x-icon" href="/img/agartha-favicon.png">
+        <link rel="icon" type="image/x-icon" href="./img/agartha-favicon.png">
         <title>Syntonikka</title>
       </head>
   <body>
     <div>
       <div class="titleContainer">
         <div class="titleElement">Hi! I am Syntonikka.</div>
-        <p class="titleElement">Currently, I'm building <button class="buttonAgartha"><a href="https://agartha.one" target="_blank" rel="noopener noreferrer">Agartha</a></button>, a DAO to Advocate Intentional Regenerative Solarpunk Communities.</p>
+        <div class="titleElement">
+          <p>Currently, I'm building 
+          <a class="hoverColor buttonAgartha" href="https://agartha.one" target="_blank" rel="noopener noreferrer">Agartha</a>
+          , a meta-map to explore Solarpunk communities.</p>
+        </div>
+
+
         <img src="img/nico.jpg" alt="nico" class="pfp">
 
         <div class="titleElementButtons">
-          <button class="buttonTrait" onclick="toggleItem('showGames');">Game Development</button>
-          <button class="buttonTrait" onclick="toggleItem('showDesign');">Visual Design</button>
-          <button class="buttonTrait" onclick="toggleItem('showAR');">Augmented Reality</button>
-          <a class="buttonTrait" href="https://www.instagram.com/syntonikka/" target="_blank" rel="noopener noreferrer">3D Modeling</a>
-          <button class="buttonTrait"onclick="toggleItem('showIllustrations');">Illustrations</button>
-          <a class="buttonTrait" href="https://soundcloud.com/syntonikka" target="_blank" rel="noopener noreferrer">Music</a>
-          <a class="buttonTrait" href="https://mirror.xyz/syntonikka.eth" target="_blank" rel="noopener noreferrer">Blog</a>
-          <button class="buttonTrait" onclick="toggleItem('showDAOConsulting');">DAO Work</button>
-          <button class="buttonTrait" onclick="toggleItem('showContact');">Contact</button>
+          <div class="hoverColor buttonTrait" onclick="toggleItem('showGames');">Games</div>
+          <div class="hoverColor buttonTrait" onclick="toggleItem('showDesign');">Visuals</div>
+          <div class="hoverColor buttonTrait" onclick="toggleItem('showAR');">Augmented Reality</div>
+          <a class="hoverColor buttonTrait" href="https://www.behance.net/gallery/166550167/Surreal-Landscapes" target="_blank" rel="noopener noreferrer">3D</a>
+          <a class="hoverColor buttonTrait" href="https://www.behance.net/gallery/61281835/Meanwhile-in-parallel-universe" target="_blank" rel="noopener noreferrer">2D</a>
+          <!-- <button class="buttonTrait"onclick="toggleItem('showIllustrations');">Illustrations</button> -->
+          <a class="hoverColor buttonTrait" href="https://soundcloud.com/syntonikka" target="_blank" rel="noopener noreferrer">Music</a>
+          <a class="hoverColor buttonTrait" href="https://mirror.xyz/syntonikka.eth" target="_blank" rel="noopener noreferrer">Blog</a>
+          <div class="hoverColor buttonTrait" onclick="toggleItem('showDAOConsulting');">DAOs</div>
+          <div class="hoverColor buttonTrait" onclick="toggleItem('showContact');">Contact</div>
         </div>
 
-        <div class="titleElement showItem" id="showIllustrations">
+        <!-- <div class="titleElement showItem" id="showIllustrations">
           <a class="buttonLinks" href="http://animateception.com/art.html" target="_blank" rel="noopener noreferrer">Early Works</a>
           <a class="buttonLinks"  href="https://www.behance.net/gallery/61281835/Meanwhile-in-parallel-universe" target="_blank" rel="noopener noreferrer">Parallel Universe</a>
           <a class="buttonLinks"  href="http://animatedreality.com/%e3%80%8cillustration%e3%80%8dpyramid-in-japan/" target="_blank" rel="noopener noreferrer">Pyramid in Japan</a>
-        </div>
+        </div> -->
 
         <div class="titleElement showItem" id="showGames">
-          <a class="buttonLinks" href="https://www.pinx.studio/chefumami" target="_blank" rel="noopener noreferrer">Chef Umami</a>
-          <a class="buttonLinks"  href="http://scratchmyitchyback.com/" target="_blank" rel="noopener noreferrer">Scratch My Itchy Back</a>
-          <a class="buttonLinks"  href="https://twitter.com/syntonikka/status/1472737787220660224?s=20&t=KsyZHQ_DrkT_DEcVYz72MQ" target="_blank" rel="noopener noreferrer">Rhythm Animals</a>
-          <a class="buttonLinks"  href="http://animatedreality.com/tag/games/" target="_blank" rel="noopener noreferrer">All Games</a>
+          <a class="hoverColor buttonLinks" href="https://www.pinx.studio/chefumami" target="_blank" rel="noopener noreferrer">Chef Umami</a>
+          <a class="hoverColor buttonLinks"  href="http://scratchmyitchyback.com/" target="_blank" rel="noopener noreferrer">Scratch My Back</a>
+          <a class="hoverColor buttonLinks"  href="https://www.youtube.com/watch?v=lpoj2RG_aqk&ab_channel=AnimatedReality" target="_blank" rel="noopener noreferrer">Opposites</a>
+          <a class="hoverColor buttonLinks"  href="https://www.behance.net/gallery/166550989/Game-Experiments">More🕹️</a>
         </div>
 
         <div class="titleElement showItem" id="showDesign">
-          <a class="buttonLinks" href="https://www.figma.com/file/h7jgg6m91s4karLHex1N9K/DAO-Crossing?node-id=0%3A1" target="_blank" rel="noopener noreferrer">DAO Crossing</a>
-          <a class="buttonLinks"  href="https://www.notion.so/Pitch-Deck-LEGACY-4b34647ef0754adc8b076ae7dd4c21d5" target="_blank" rel="noopener noreferrer">Agartha Pitch</a>
-          <a class="buttonLinks"  href="https://agartha.one/" target="_blank" rel="noopener noreferrer">Agartha Web</a>
-          <a class="buttonLinks" href="https://www.youtube.com/watch?v=jWgii34kzYo" target="_blank" rel="noopener noreferrer">2016 Election</a>
+          <a class="hoverColor buttonLinks" href="https://www.figma.com/file/h7jgg6m91s4karLHex1N9K/DAO-Crossing?node-id=0%3A1" target="_blank" rel="noopener noreferrer">DAO Crossing</a>
+          <a class="hoverColor buttonLinks"  href="https://www.notion.so/Pitch-Deck-LEGACY-4b34647ef0754adc8b076ae7dd4c21d5" target="_blank" rel="noopener noreferrer">Agartha Pitch</a>
+          <a class="hoverColor buttonLinks"  href="https://agartha.one/" target="_blank" rel="noopener noreferrer">Agartha Web</a>
+          <a class="hoverColor buttonLinks" href="https://www.youtube.com/watch?v=jWgii34kzYo" target="_blank" rel="noopener noreferrer">2016 Election</a>
         </div>
 
         <div class="titleElement showItem" id="showDAOConsulting">
           <div class="titleElementDescription">
-          I worked @<a class="buttonLinks" href="https://citydao.io/" target="_blank" rel="noopener noreferrer">CityDAO</a> as a designer & community curator. I'm also part of 
+          I worked @<a class="hoverColor buttonLinks" href="https://citydao.io/" target="_blank" rel="noopener noreferrer">CityDAO</a> as a designer & community curator. I'm also part of 
           <!-- <a class="buttonLinks" href="https://creatorcabins.com/" target="_blank" rel="noopener noreferrer">CabinDAO</a>  -->
-          <a class="buttonLinks" href="https://traditionaldreamfactory.com/" target="_blank" rel="noopener noreferrer">TDF</a>
+          <a class="hoverColor buttonLinks" href="https://traditionaldreamfactory.com/" target="_blank" rel="noopener noreferrer">TDF</a>
            & 
-          <a class="buttonLinks" href="https://www.fwb.help/" target="_blank" rel="noopener noreferrer">FWB</a>
+          <a class="hoverColor buttonLinks" href="https://www.fwb.help/" target="_blank" rel="noopener noreferrer">FWB</a>
           </div>
         </div>
 
         <div class="titleElement showItem" id="showContact">
-          <a class="buttonLinks" href="https://twitter.com/syntonikka" target="_blank" rel="noopener noreferrer">Twitter</a>
-          <a class="buttonLinks"  href="https://www.instagram.com/syntonikka/" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a class="buttonLinks"  href="https://www.linkedin.com/in/nico-shi-b38b0b91/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <div class="buttonLinks">syntonikka@gmail.com</div>
+          <a class="hoverColor buttonLinks" href="https://twitter.com/syntonikka" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a class="hoverColor buttonLinks"  href="https://www.instagram.com/syntonikka/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a class="hoverColor buttonLinks"  href="https://www.linkedin.com/in/nico-shi-b38b0b91/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <div class="hoverColor buttonLinks">syntonikka@gmail.com</div>
         </div>
 
         <div class="titleElement showItem" id="showAR">
           <!-- <div class="titleElementDescription">
           I worked at Snapchat as an AR creator & engineer during 2020-2022. 
           </div> -->
-          <a class="buttonLinks" href="https://lensstudio.snapchat.com/creator/ZUsWoApM5hss6-LoHGrPwg" target="_blank" rel="noopener noreferrer">SnapAR</a>
+          <a class="hoverColor buttonLinks" href="https://lensstudio.snapchat.com/creator/ZUsWoApM5hss6-LoHGrPwg" target="_blank" rel="noopener noreferrer">Creator Profile</a>
 
-          <a class="buttonLinks" href="https://docs.snap.com/lens-studio/references/templates/object/3d-hand-interactions/?_ga=2.10252336.46555538.1667818581-1441314697.1666555781" target="_blank" rel="noopener noreferrer">Hand Tracking</a>
+          <a class="hoverColor buttonLinks" href="https://docs.snap.com/lens-studio/references/templates/object/3d-hand-interactions/?_ga=2.10252336.46555538.1667818581-1441314697.1666555781" target="_blank" rel="noopener noreferrer">Hand Tracking</a>
 
-          <a class="buttonLinks" href="https://support.lensstudio.snapchat.com/hc/en-us/articles/360052632811-AR-Scavenger-Hunt" target="_blank" rel="noopener noreferrer">Scavenger Hunt Game</a>
+          <a class="hoverColor buttonLinks" href="https://support.lensstudio.snapchat.com/hc/en-us/articles/360052632811-AR-Scavenger-Hunt" target="_blank" rel="noopener noreferrer">Scavenger Hunt</a>
 
-          <a class="buttonLinks" href="https://docs.snap.com/lens-studio/references/templates/interactive/scan/#guide" target="_blank" rel="noopener noreferrer">AR Scan</a>
+          <a class="hoverColor buttonLinks" href="https://docs.snap.com/lens-studio/references/templates/interactive/scan/#guide" target="_blank" rel="noopener noreferrer">AR Scan</a>
 
-          <a class="buttonLinks" href="https://docs.snap.com/lens-studio/references/templates/object/body-mesh#guide" target="_blank" rel="noopener noreferrer">Body Tracking</a>
+          <a class="hoverColor buttonLinks" href="https://docs.snap.com/lens-studio/references/templates/object/body-mesh#guide" target="_blank" rel="noopener noreferrer">Body Tracking</a>
 
           <!-- <a class="buttonLinks" href="https://docs.snap.com/lens-studio/references/templates/world/tween#guide" target="_blank" rel="noopener noreferrer">Tweening</a> -->
         </div>
@@ -84,4 +91,5 @@
   </body>
 
   <script src="functions.js"></script>
+  <script src="gradient_background.js"></script>
 </html>
