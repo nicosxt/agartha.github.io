@@ -20,13 +20,6 @@ a:visited{
 a{
   color: #ff00d4;
 }
-
-/* button{
-    border-style: none;
-    background: none;
-    font-size: 2rem;
-
-} */
   
 button:hover{
   cursor: pointer;
@@ -70,14 +63,6 @@ button:hover{
   bottom: 1.5rem;
 }
 
-/* .buttonAgartha{
-  background-color: #FFDDED;
-} */
-
-/* .buttonAgartha:hover{
-  background-color: #6BFFB2;
-} */
-
 .buttonTrait{
     margin: 0.5vw;
     /* background-color: #FFDDED; */
@@ -96,41 +81,8 @@ button:hover{
   cursor: pointer;
 }
 
-/* .buttonTrait:hover{
-  background-color: #6BFFB2;
-} */
-
-/* .buttonLinks{
-  margin: 0.5vw;
-  background-color: #f9ffbc;
-  overflow-wrap: normal;
-} */
-
-/* .buttonLinks:hover{
-  background-color: #6BFFB2;
-} */
-
-/* .hoverColor:hover{
-  background-color: #6BFFB2;
-} */
-
-/* .emailLink{
-  margin: 0.5vw;
-  background-color: #bcffe4;
-  overflow-wrap: normal;
-} */
-
 .pfp{
   width: auto;
   height: 18vh;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
-
-  /* .showOnHover{
-    display: none;
-  }
-
-  .buttonDAO:hover + .showOnHover{
-    display: block;
-    color: red;
-  } */
